@@ -1,17 +1,14 @@
 # PlusMatlabUtils
 Matlab utilities for reading/writing Plus data structures and communicating with Plus applications
 
-# MatlabMetafileIO
+- MatlabMetafileIO: Scripts for reading/writing transforms and images in Matlab, from sequence metafiles (.mha, .mhd) written by Plus
+- MatlabOpenIGTLinkInterface: Scripts for real-time receiving of transforms in Matlab through [OpenIGTLink](http://openigtlink.org)
 
-Scripts for reading/writing transforms and images in Matlab, from sequence metafiles (.mha, .mhd) written by Plus
 Detailed documentation is available in the headers of the Matlab scripts
 
-# MatlabOpenIGTLinkInterface
+# Examples
 
-Scripts for real-time receiving of transforms in Matlab through [OpenIGTLink](http://openigtlink.org)
-Detailed documentation is available in the headers of the Matlab scripts.
-
-## Example: receiving live data from trackers from PlusServer
+## Receive live data from trackers from PlusServer
 
 - Download or clone PlusMatlabUtils repository to your computer
 - Download and install the Plus package
@@ -20,7 +17,7 @@ Detailed documentation is available in the headers of the Matlab scripts.
   - "PlusServer: Replay...": connect to a simulated tracking device (that reads pre-recorded transforms from a file). No tracking hardware is needed.
 - Receive and display transforms by running the `test.m` in scriptMatlabOpenIGTLinkReceiver folder
 
-## Example: receiving live data from 3D Slicer
+## Receive live data from 3D Slicer
 
 - Download or clone PlusMatlabUtils repository to your computer
 - Download and install 3D Slicer
@@ -33,8 +30,7 @@ Detailed documentation is available in the headers of the Matlab scripts.
 - In Matlab, run the `testReceiveTransforms.m` script in MatlabOpenIGTLinkInterface folder to receive and display transforms
 - Change the LinearTransform in 3D Slicer, the updated transform values will be automatically sent to Matlab
 
-## Example: sending live data to 3D Slicer
-
+## Send live data to 3D Slicer
 
 - Download or clone PlusMatlabUtils repository to your computer
 - Download and install 3D Slicer
@@ -43,7 +39,7 @@ Detailed documentation is available in the headers of the Matlab scripts.
 - In Matlab, run the the `testSendTransform.m` script in MatlabOpenIGTLinkInterface folder receive and display transforms
 - The updated transform values will be displayed in the Transforms module in 3D Slicer
 
-## Running Matlab functions
+# Running Matlab functions from 3D Slicer
 
 MatlabBridge extension in 3D Slicer can be used for running Matlab functions directly from Slicer
 (inputs are defined in Slicer and results are visualized immediately in Slicer), see
