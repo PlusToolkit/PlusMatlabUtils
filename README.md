@@ -1,3 +1,7 @@
+# NOTICE
+
+***We moved to Python. We preserve this repository and merge pull requests that we receive, but we do not actively develop these scripts anymore. You can use [pyigtl](https://github.com/lassoan/pyigtl) Python package to communicate via OpenIGTLink in your data processing workflow.***
+
 # PlusMatlabUtils
 Matlab utilities for reading/writing Plus data structures and communicating with Plus applications
 
